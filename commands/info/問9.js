@@ -5,7 +5,9 @@ module.exports = {
     permissions: [],
     devOnly: false,  //if true, only the owner can run this command
     run: async ({client, message, args}) => {
-        message.reply("答9")
+        const QandAchannel = client.channels.cache.get('971047482555514910');
+        QandAchannel.send ({ content: "答9",
+        })
     }
 
 }
